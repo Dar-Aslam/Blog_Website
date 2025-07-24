@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSphere - Tech News & Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-globe"></i>CodeSphere
+                </a>
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#post-1" class="nav-link"><i class="fas fa-brain"></i> AI News</a></li>
+                        <li><a href="#post-2" class="nav-link"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+                        <li><a href="#post-3" class="nav-link"><i class="fas fa-microchip"></i> Hardware</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h1><i class="fa-solid fa-blog"></i> Welcome to CodeSphere</h1>
+            <p>Latest tech news and insights by Mohamad Aslam</p>
+        </section>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search blog posts...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <section class="blog-posts" id="blog-posts">
+            <!-- Blog Post 1 -->
+            <article class="blog-post" id="post-1" data-category="artificial-intelligence">
+                <div class="post-image" style="background-image: url('images/post-1.jpeg')"></div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> January 20, 2025</span>
+                        <span><i class="fas fa-user"></i> Mohamad Aslam</span>
+                        <span><i class="fas fa-clock"></i> 4 min read</span>
+                    </div>
+                    <h2 class="post-title">OpenAI's GPT-5 Development: What We Know So Far</h2>
+                    <p class="post-excerpt">
+                        Recent reports suggest OpenAI is making significant progress on GPT-5, with enhanced reasoning capabilities 
+                        and multimodal features. Industry experts predict revolutionary changes in AI applications, from healthcare 
+                        to autonomous systems. This development could reshape how we interact with AI technology in our daily lives.
+                    </p>
+                    <div class="post-tags">
+                        <a href="#" class="tag">AI</a>
+                        <a href="#" class="tag">OpenAI</a>
+                        <a href="#" class="tag">GPT-5</a>
+                        <a href="#" class="tag">Machine Learning</a>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <div class="comments-header">
+                            <i class="fas fa-comments"></i>
+                            <span>Comments (<span class="comment-count" data-post="1">0</span>)</span>
+                        </div>
+                        
+                        <form class="comment-form" data-post="1">
+                            <div class="form-group">
+                                <label for="name-1"><i class="fas fa-user"></i> Name</label>
+                                <input type="text" id="name-1" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-1"><i class="fas fa-message"></i> Comment</label>
+                                <textarea id="comment-1" name="comment" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Post Comment
+                            </button>
+                        </form>
+
+                        <div class="comments-list" id="comments-1"></div>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="social-share">
+                        <span class="share-text">Share this post:</span>
+                        <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post" id="post-2" data-category="cybersecurity">
+                <div class="post-image" style="background-image: url('images/post-2 image.jpeg')"></div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> January 18, 2025</span>
+                        <span><i class="fas fa-user"></i> Mohamad Aslam</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                    <h2 class="post-title">Major Cybersecurity Threats Emerge in 2025: Quantum-Resistant Encryption Urgency</h2>
+                    <p class="post-excerpt">
+                        As quantum computing advances rapidly, cybersecurity experts warn of imminent threats to current encryption 
+                        standards. Major tech companies are racing to implement quantum-resistant encryption protocols. Recent attacks 
+                        on critical infrastructure highlight the urgent need for updated security measures across all industries.
+                    </p>
+                    <div class="post-tags">
+                        <a href="#" class="tag">Cybersecurity</a>
+                        <a href="#" class="tag">Quantum Computing</a>
+                        <a href="#" class="tag">Encryption</a>
+                        <a href="#" class="tag">Data Security</a>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <div class="comments-header">
+                            <i class="fas fa-comments"></i>
+                            <span>Comments (<span class="comment-count" data-post="2">0</span>)</span>
+                        </div>
+                        
+                        <form class="comment-form" data-post="2">
+                            <div class="form-group">
+                                <label for="name-2"><i class="fas fa-user"></i> Name</label>
+                                <input type="text" id="name-2" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-2"><i class="fas fa-message"></i> Comment</label>
+                                <textarea id="comment-2" name="comment" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Post Comment
+                            </button>
+                        </form>
+
+                        <div class="comments-list" id="comments-2"></div>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="social-share">
+                        <span class="share-text">Share this post:</span>
+                        <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post" id="post-3" data-category="hardware">
+                <div class="post-image" style="background-image: url('images/post-3 image.jpeg')"></div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> January 15, 2025</span>
+                        <span><i class="fas fa-user"></i> Mohamad Aslam</span>
+                        <span><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h2 class="post-title">Intel's Next-Gen Processors: 2nm Technology Breakthrough</h2>
+                    <p class="post-excerpt">
+                        Intel announces breakthrough in 2nm processor technology, promising 30% performance increase and 50% power 
+                        reduction. This advancement could revolutionize mobile computing and data centers. The new architecture 
+                        features advanced AI acceleration units and enhanced security capabilities for next-generation applications.
+                    </p>
+                    <div class="post-tags">
+                        <a href="#" class="tag">Intel</a>
+                        <a href="#" class="tag">Processors</a>
+                        <a href="#" class="tag">2nm Technology</a>
+                        <a href="#" class="tag">Hardware</a>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section">
+                        <div class="comments-header">
+                            <i class="fas fa-comments"></i>
+                            <span>Comments (<span class="comment-count" data-post="3">0</span>)</span>
+                        </div>
+                        
+                        <form class="comment-form" data-post="3">
+                            <div class="form-group">
+                                <label for="name-3"><i class="fas fa-user"></i> Name</label>
+                                <input type="text" id="name-3" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-3"><i class="fas fa-message"></i> Comment</label>
+                                <textarea id="comment-3" name="comment" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Post Comment
+                            </button>
+                        </form>
+
+                        <div class="comments-list" id="comments-3"></div>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="social-share">
+                        <span class="share-text">Share this post:</span>
+                        <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 CodeSphere Blog by Mohamad Aslam. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/mr-ad-302813254/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Dar-Aslam"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
